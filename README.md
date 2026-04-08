@@ -1,4 +1,4 @@
-# Premium Aesthetic Wall Calendar
+# Wall Calendar
 
 A high-fidelity, interactive wall calendar component built with React and Tailwind CSS. This project features a sophisticated SaaS-style interface with 3D animations, seasonal dynamic wallpapers, and professional date-range selection logic.
 
@@ -28,7 +28,7 @@ This project is built with **Vite + React**. Follow these steps to set up your l
 1. **Clone the Repository**:
    ```bash
    git clone <your-repo-link>
-   cd premium-wall-calendar
+   cd wall-calendar
    ```
 
 2. **Install Dependencies**:
@@ -63,5 +63,3 @@ The codebase follows a professional, modular pattern:
 - **Vite Build System**: Selected over CRA for faster HMR (Hot Module Replacement) and modern ESM support.
 - **Horizontal Split Layout**: Prioritized a balanced SaaS-inspired dashboard layout for better visual hierarchy on high-resolution screens.
 
-## 📄 License
-MIT License - Created for Professional Assessment.
