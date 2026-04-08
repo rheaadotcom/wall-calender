@@ -23,24 +23,45 @@ A high-fidelity, interactive wall calendar component built with React and Tailwi
 
 ## 🚀 How to Run Locally
 
-1. **Clone the Repository** (assuming you have pushed this to your GitHub):
+This project is built with **Vite + React**. Follow these steps to set up your local development environment:
+
+1. **Clone the Repository**:
    ```bash
    git clone <your-repo-link>
-   cd <repo-folder>
+   cd premium-wall-calendar
    ```
 
-2. **Open the Project**:
-   Simply open the `index.html` file in any modern web browser.
-   *   **Windows**: `start index.html`
-   *   **macOS**: `open index.html`
+2. **Install Dependencies**:
+   ```bash
+   npm install
+   ```
 
-*Note: No `npm install` is required as all dependencies are served via high-performance CDNs for maximum speed and simplicity.*
+3. **Launch Development Server**:
+   ```bash
+   npm run dev
+   ```
+   *The app will be available at `http://localhost:5173`.*
 
-## 🧠 Design Choices
+4. **Build for Production**:
+   ```bash
+   npm run build
+   ```
 
-- **Horizontal Split Architecture**: Placed the "Notes" on the left and the "Calendar" on the right to follow natural F-pattern reading habits during professional assessment.
-- **Component-Based Logic**: Used a modular approach with specific hooks (e.g., `useDateRange`) to demonstrate clean separation of concerns and maintainability.
-- **Visual Feedback**: Added subtle micro-interactions like the "Today" pulse and staggered cell entrances to make the app feel alive and premium.
+## 🏗️ Project Structure
+
+The codebase follows a professional, modular pattern:
+
+- **`src/components/`**: Atomic UI components (Hero, Grid, Notes).
+- **`src/hooks/`**: Custom React hooks for business logic (Persistence, Date Range, Grid generation).
+- **`src/constants/`**: Static configuration and asset galleries.
+- **`src/App.jsx`**: Main application assembly.
+- **`tailwind.config.js`**: Custom design tokens and theme settings.
+
+## 🧠 Design choices
+
+- **Modular Architecture**: Separated business logic (hooks) from visual presentation (components) to ensure high testability and clean code standards.
+- **Vite Build System**: Selected over CRA for faster HMR (Hot Module Replacement) and modern ESM support.
+- **Horizontal Split Layout**: Prioritized a balanced SaaS-inspired dashboard layout for better visual hierarchy on high-resolution screens.
 
 ## 📄 License
 MIT License - Created for Professional Assessment.
